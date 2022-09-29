@@ -1,0 +1,24 @@
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+lcd.begin(16, 2);
+lcd.setCursor(2, 0);
+lcd.print("HELLO, WORLD!");
+delay(500);
+}
+
+PROGRAM
+
+void loop() {
+
+lcd.setCursor(2, 1);
+lcd.print("HAI STUDENTS");
+delay(500);
+lcd.setCursor(2, 1);
+lcd.print("***HOW R U****");
+delay(500);
+
+lcd.display();
+delay(500);
+}
